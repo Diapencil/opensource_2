@@ -1,6 +1,6 @@
 from collections import deque
 
-####################################################################
+#####################################################################
 def inputCheck(num, min, max, msg=''): #부적절한 입력 방지
     while 1:
         data = input(msg).split()
@@ -44,7 +44,7 @@ def bfs(): #미로 탐색
         if from_x==to_x and from_y==to_y:
             from_y, from_x = from_xy
             path.append(to_xy)
-            
+
     # https://velog.io/@1ncursio/A-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EC%9E%90-Python3
     # 탐색한 경로들로부터 최단 경로를 찾아내는 코드 참조
 
@@ -84,7 +84,7 @@ def print_shortest_path():
             else: print(".", end=" ")
         print()
     print()
-####################################################################
+#####################################################################
 
 print("[ 미로 탐색 알고리즘 ]")
 w, h = inputCheck(2, 2, 100, "미로의 가로, 세로의 길이를 순서대로 입력 (띄어쓰기로 구분) : ")
